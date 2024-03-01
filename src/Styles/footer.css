@@ -1,0 +1,196 @@
+.footer-area-one {
+  height: 500px;
+}
+.footer-area-one-bg {
+  padding: 80px 0 0px 0;
+  background-color: #171717;
+  height: 450px;
+  margin-top: 80px;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1320px;
+}
+.row {
+  --bs-gutter-x: 30px;
+}
+.col1 {
+  width: 300px;
+  height: 360px;
+  margin-right: 180px;
+}
+.col2 {
+  margin-right: 180px;
+}
+.footer-logo-1 {
+  width: 160px;
+  height: 60px;
+  margin-left: -130px;
+}
+.footer-content-1 {
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  width: 280px;
+  height: 90px;
+  text-align: left;
+}
+.socials {
+  margin-top: 40px;
+  display: flex;
+}
+.socials img {
+  width: 30px;
+  height: 30px;
+  color: #ff6600 !important;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+.socials img:hover {
+  background-color: #ff6600;
+  cursor: pointer;
+}
+.socials ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox */
+}
+
+.socials li {
+  margin-right: 10px; /* Add some spacing between icons */
+}
+
+.socials li:last-child {
+  margin-right: 0; /* Remove margin for the last icon */
+}
+.flex-footer {
+  width: 300px;
+  height: 80px;
+  display: flex;
+}
+.flex-footer img {
+  width: 40px;
+  height: 40px;
+  color: #ff6600;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.flex-footer p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.875em;
+  width: 240px;
+  height: 60px;
+  margin-left: 25px;
+  margin-top: -5px;
+  text-align: left;
+  font-weight: 400;
+}
+.p-flex-1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.875em;
+  width: 220px;
+  height: 30px !important;
+  margin-top: -12px !important;
+  margin-left: 25px;
+  text-align: left;
+  font-weight: 400;
+}
+.p-flex-box {
+  height: 60px !important;
+}
+.row {
+  display: flex;
+  margin-left: 180px;
+}
+
+.title111 {
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+  margin-left: -170px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.title222 {
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+  margin-left: -170px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.footer-address p {
+  width: 300px;
+  height: 60px;
+  text-align: left;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  height: 2.8rem;
+  width: 100%;
+  min-width: 200px;
+  max-width: 250px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+}
+
+.input-container input {
+  width: calc(100% - 65px); /* Adjusted width to accommodate button */
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 0.625rem 0.75rem; /* Adjusted padding */
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(69 90 100);
+  outline: none;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container input:focus {
+  border: 1px solid #ff6600;
+}
+
+.invite-btn {
+  position: absolute;
+  width: 65px;
+  right: 0; /* Adjusted right position */
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  border-radius: 0 8px 8px 0; /* Adjusted border-radius */
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.invite-btn:hover {
+  transform: translateX(-2px); /* Adjusted hover effect */
+}
+
+.footer-address {
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  width: 280px;
+  height: 90px;
+  text-align: left;
+}
+

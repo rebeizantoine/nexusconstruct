@@ -1,0 +1,32 @@
+    <div className="electrical-wiring-container">
+      <h1>Electrical Wiring in Lebanese Construction</h1>
+      <p>Welcome to the heart of every modern Lebanese construction project - the electrical wiring...</p>
+
+      <h2>Lebanese Standards and Regulations</h2>
+      <p>In compliance with the stringent Lebanese Standards (Libnor), electrical wiring follows a set of guidelines that prioritize safety and longevity...</p>
+
+      <h2>Types of Wiring Commonly Used</h2>
+      <ul>
+        <li><strong>PVC Insulated Cables (PVC)</strong>: PVC-insulated cables are the workhorse of Lebanese electrical installations...</li>
+        <li><strong>Copper Wiring for Reliability</strong>: Lebanese electricians swear by copper wiring for its conductivity and reliability...</li>
+        <li><strong>Flexible Wiring for Adaptability</strong>: In the bustling cityscape of Beirut or the serene valleys of the Bekaa, flexibility is key...</li>
+      </ul>
+
+      <h2>Wiring for Resilience</h2>
+      <ul>
+        <li><strong>Surge Protection</strong>: Lebanese homes and businesses contend with occasional power surges...</li>
+        <li><strong>Grounding for Safety</strong>: Safety is paramount in Lebanese construction...</li>
+        <li><strong>Circuit Breakers and Panel Upgrades</strong>: As technology advances, so does our need for more power...</li>
+      </ul>
+
+      <h2>Sustainable Solutions</h2>
+      <ul>
+        <li><strong>LED Lighting for Efficiency</strong>: In our commitment to a greener Lebanon...</li>
+        <li><strong>Solar Power Integration</strong>: With ample sunshine year-round, Lebanon is embracing solar power...</li>
+      </ul>
+
+      <h2>Expertise of Lebanese Electricians</h2>
+      <p>Behind every well-lit Lebanese home or office is the craftsmanship of our skilled electricians...</p>
+
+      <p>For all your electrical wiring needs in Lebanon, trust in our expertise...</p>
+    </div>
