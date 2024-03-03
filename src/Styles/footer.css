@@ -193,4 +193,30 @@
   height: 90px;
   text-align: left;
 }
-
+.copyright {
+  display: flex;
+  margin-top: 20px;
+}
+.line-123 {
+  border-top: 1px solid #333f4d;
+  width: 80%;
+  margin-left: 160px;
+}
+.copyright p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875em;
+  margin: 0;
+  padding: 0;
+}
+.copyright-p1 {
+  width: 630px;
+  margin-right: 18% !important;
+}
+.copyright-p3 {
+  margin-left: 50px !important;
+}
+.copyright-p4 {
+  margin-left: 50px !important;
+}

@@ -6,6 +6,7 @@ import Services from "./Components/Services";
 import Recent from "./Components/Recent";
 import Footer from "./Components/Footer";
 import Moreabout from "./Components/Moreabout";
+import Projectview from "./Components/Projectview";
 
 import "./App.css";
 
@@ -31,6 +32,14 @@ function App() {
             element={
               <>
                 <Moreabout />
+              </>
+            }
+          />
+          <Route
+            path="/projectview"
+            element={
+              <>
+                <Projectview />
               </>
             }
           />

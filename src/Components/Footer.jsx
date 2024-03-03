@@ -81,6 +81,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="line-123"></div>
+        <div className="copyright">
+          <p className="copyright-p1">© SteelCity 2023 | All Rights Reserved</p>
+          <p className="copyright-p2">Terms & Condition</p>
+          <p className="copyright-p4">Privacy Policy</p>
+          <p className="copyright-p3">Contact Us</p>
+        </div>
       </div>
     </div>
   );

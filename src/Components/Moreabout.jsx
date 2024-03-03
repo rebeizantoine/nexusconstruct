@@ -60,7 +60,7 @@ const Moreabout = () => {
         </div>
       </div>
       <div className="expertise-style">
-        <div className="">
+        <div className="expertise-big-box">
           <h3 className="expertise-style-h3-1">Your Vision Our Expertise</h3>
           <p className="expertise-style-p-1 ">
             {" "}
@@ -98,10 +98,19 @@ const Moreabout = () => {
               <p className="expertise-style-p-3">01</p>
             </div>
           </div>
+          <p className="expertise-style-p-4">
+            Aliquam eros justo, posuere loborti viverra laoreet matti
+            ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis
+            viverra laoreet augue mattis entum ullamcorper viverra laoreet
+            Aliquam eros justo, posuere loborti viverra laoreet matti
+            ullamcorper posuere viverra .Aliquam eros just posre lobortis non,
+            viverraAliquam eros justo
+          </p>
         </div>
         <h3></h3>
         <p></p>
       </div>
+      <img className="image-second" src={imageconstruction} alt="" />
     </div>
   );
 };
