@@ -43,6 +43,7 @@ const Recent = () => {
           width: "60px",
           height: "60px",
           borderRadius: "50%",
+          marginRight: "200px",
         }}
         onClick={onClick}
       />

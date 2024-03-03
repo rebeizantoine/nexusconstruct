@@ -7,6 +7,8 @@ import Recent from "./Components/Recent";
 import Footer from "./Components/Footer";
 import Moreabout from "./Components/Moreabout";
 import Projectview from "./Components/Projectview";
+import Privacypolicy from "./Components/Privacypolicy";
+import Termsandcondition from "./Components/Termsandcondition";
 
 import "./App.css";
 
@@ -40,6 +42,22 @@ function App() {
             element={
               <>
                 <Projectview />
+              </>
+            }
+          />  
+          <Route
+            path="/terms"
+            element={
+              <>
+                <Termsandcondition />
+              </>
+            }
+          />
+          <Route
+            path="/privacy"
+            element={
+              <>
+                <Privacypolicy />
               </>
             }
           />
