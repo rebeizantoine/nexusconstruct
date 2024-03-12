@@ -16,6 +16,7 @@ import Linkedin from "../Images/linkedin2.png";
 import twitter from "../Images/twitter.png";
 import pinterest from "../Images/pinterest.png";
 import email from "../Images/mail.png";
+import Doumit from "../Images/doumit-image.png";
 
 const Projectviewshow = () => {
   const { projectTitle } = useParams();
@@ -26,7 +27,7 @@ const Projectviewshow = () => {
     const fetchProjectByTitle = async () => {
       try {
         const response = await axios.get(
-          `https://steelcitybackend.onrender.comprojects/title/${projectTitle}`
+          `https://steelcitybackend.onrender.com/projects/title/${projectTitle}`
         );
         setProject(response.data);
       } catch (error) {
@@ -174,14 +175,25 @@ const Projectviewshow = () => {
               <p>{project.highlight5}</p>
             </div>
           </div>
-          <p className="p-project-of-all">
-            Aliquam eros justo, posuere loborti viverra laoreet matti
-            ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis
-            viverra laoreet augue mattis fmentum ullamcorper viverra laoreet
-            Aliquam eros justo, posuere loborti viverra laoreet matti
-            ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis
-            non, viverra
-          </p>
+          <div className="testimonial-flex">
+            <div>
+              <p className="p-project-of-all">
+                "With over a decade of dedicated service, our civil engineering
+                company has consistently provided exceptional quality in our
+                work while maintaining competitive pricing that sets us apart in
+                the industry."
+              </p>
+            </div>
+            <div className="box-of-kamil">
+              <div className="kamil-img">
+                <p>Kamil Doumit</p>
+                <img className="doumit-img" src={Doumit} alt="" />
+              </div>
+              <p className="p-dsa">
+                Project Manager at Nexus Construct for over 10 years
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

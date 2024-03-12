@@ -25,7 +25,7 @@ function App() {
     // Simulate loading time, you can replace this with your actual data loading logic
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000); // 2 seconds for demonstration
+    }, 2000); // 2 seconds for demonstration
 
     return () => clearTimeout(timer);
   }, []);
