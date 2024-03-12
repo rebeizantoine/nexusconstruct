@@ -1,0 +1,134 @@
+.terms-and-privacy {
+  margin-top: 40px;
+  margin-left: 28%;
+}
+
+.terms-of-use-title {
+  width: 675px !important;
+  height: 80px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  margin-bottom: 35px;
+}
+.terms-of-use-title h1 {
+  color: #000;
+  font-family: Manrope;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 354px;
+  text-align: center;
+  margin-left: 22%;
+}
+.terms-of-use-second-box {
+  width: 675px !important;
+  height: 330px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  margin-bottom: 35px;
+}
+
+.terms-of-use-second-box p {
+  color: #000;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.privacy-policy {
+  width: 675px !important;
+  height: 117px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  margin-bottom: 35px;
+}
+.privacy-policy p {
+  width: 614px;
+  height: 39px;
+  color: #000;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.privacy-policy h1 {
+  color: #000;
+  font-family: Manrope;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cookies {
+  width: 675px !important;
+  height: 202px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  margin-bottom: 35px;
+}
+.cookies h1 {
+  color: #000;
+  font-family: Manrope;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cookies p {
+  width: 614px;
+  height: 120px;
+  color: #000;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.privacy-statement {
+  width: 675px !important;
+  height: 117px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  margin-bottom: 35px;
+}
+
+.privacy-statement h1 {
+  color: #000;
+  font-family: Manrope;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.privacy-statement p {
+  color: #000;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}

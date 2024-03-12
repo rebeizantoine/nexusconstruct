@@ -114,6 +114,8 @@
 }
 .images-3 {
   display: flex;
+  width: 410px;
+  height: 300px;
 }
 .small-title-box h2 {
   font-family: Rajdhani, sans-serif;

@@ -55,6 +55,7 @@ a {
 
 .image-circle:hover {
   background-color: rgba(255, 102, 0, 0.3); /* Light orange on hover */
+  cursor: pointer;
 }
 .h4-header {
   margin-top: -5px;

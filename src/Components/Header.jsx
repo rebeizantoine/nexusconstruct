@@ -2,8 +2,59 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "../Styles/header.css";
 import Phone from "../Images/phone.png";
-import SteelCity from "../Images/steelcity.png";
-const Header = () => {
+import whitetry from "../Images/WHITERTRY.PNG";
+import { useNavigate } from "react-router-dom";
+
+const Header = ({ scrollToServices }) => {
+  const navigate = useNavigate();
+
+  const handleImageClick = () => {
+    navigate("/");
+  };
+
+  const handleScrollToFooter = () => {
+    const footerSection = document.getElementById("footer");
+    if (footerSection) {
+      footerSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
+  const handleScrollToServices = () => {
+    setTimeout(() => {
+      const servicesSection = document.getElementById("services");
+      if (servicesSection) {
+        servicesSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+    }, 0);
+  };
+
+  const handleScrollToProjects = () => {
+    setTimeout(() => {
+      const projectsSection = document.getElementById("projects");
+      if (projectsSection) {
+        projectsSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+    }, 0);
+  };
+
+  const handleServicesClick = () => {
+    if (scrollToServices) {
+      scrollToServices();
+    }
+  };
+
   return (
     <div>
       <div className="header-box">
@@ -21,7 +72,12 @@ const Header = () => {
         </Helmet>
         <div className="header-all">
           <div className="header-title">
-            <img className="steel-city" src={SteelCity} alt="" />
+            <img
+              className="steel-city"
+              src={whitetry}
+              alt=""
+              onClick={handleImageClick}
+            />
           </div>
           <div className="header-1">
             <nav>
@@ -33,24 +89,33 @@ const Header = () => {
                   <a href="">About Us</a>
                 </li>
                 <li>
-                  <a href="">Services</a>
+                  <a href="/#services" onClick={handleScrollToServices}>
+                    Services
+                  </a>
                 </li>
                 <li>
-                  <a href="">Projects</a>
+                  <a href="/#projects" onClick={handleScrollToProjects}>
+                    Projects
+                  </a>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <a href="/contact">Contact</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="header-2">
             <div className="image-circle">
-              <img src={Phone} className="phone-image" alt="" />
+              <img
+                src={Phone}
+                className="phone-image"
+                alt=""
+                onClick={handleScrollToFooter}
+              />
             </div>
             <div className="box-near-header">
               <p className="p-header">Need help?</p>
-              <h4 className="h4-header">09-232-330</h4>
+              <h4 className="h4-header">(01) 255-012</h4>
             </div>
           </div>
         </div>

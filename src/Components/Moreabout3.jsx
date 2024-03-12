@@ -1,12 +1,12 @@
 import React from "react";
 import banner2 from "../Images/banner-bg-2.png";
-import imageconstruction from "../Images/electperson.jpg";
+import imageconstruction from "../Images/solar-4.jpg";
 import rightarrow from "../Images/arrowright.png";
 import checkcorrect from "../Images/check.png";
 import "../Styles/moreabout.css";
 import svg1 from "../Images/expertise-item-1.svg";
 
-const Moreabout = () => {
+const Moreabout3 = () => {
   return (
     <div className="more-about">
       <div className="data-background">
@@ -34,7 +34,7 @@ const Moreabout = () => {
       <div className="elect-box-1">
         <img className="elect-image-1" src={imageconstruction} alt="" />
         <div className="elect-text-1">
-          <h1 className="title-549">Electrical Wiring</h1>
+          <h1 className="title-549">Solar Panels</h1>
           <h5></h5>
           <p className="p-elect-1">Planing, Real Estate</p>
           <p className="p-elect-2">
@@ -42,18 +42,18 @@ const Moreabout = () => {
           </p>
           <div className="flexy-1">
             <h2 className="title-elect-1">Big Project</h2>
-            <p className="p-elect-3">Types of Wiring Commonly Used</p>
+            <p className="p-elect-3">More of our services:</p>
             <div className="checklist">
               <img className="checklist123" src={checkcorrect} alt="" />
-              <p className="pvc-p">PVC Insulated Cables</p>
+              <p className="pvc-p">Residential Solar Installation</p>
             </div>
             <div className="checklist">
               <img className="checklist123" src={checkcorrect} alt="" />
-              <p className="pvc-p">Rubber Cables</p>
+              <p className="pvc-p">Commercial Solar Projects</p>
             </div>
             <div className="checklist">
               <img className="checklist123" src={checkcorrect} alt="" />
-              <p className="pvc-p">EPR Cables </p>
+              <p className="pvc-p">Off-Grid Solar Solutions </p>
             </div>
             <button className="request-service">Request service</button>
           </div>
@@ -64,43 +64,43 @@ const Moreabout = () => {
           <h3 className="expertise-style-h3-1">Your Vision Our Expertise</h3>
           <p className="expertise-style-p-1 ">
             {" "}
-            For over a decade, our Lebanon-based company has led the industry in
-            electrical wiring solutions. With a proven track record of
-            excellence, we specialize in safe, efficient installations for
-            residential and commercial properties. Our skilled team ensures
-            reliable power distribution, integrating cutting-edge technology for
-            sustainable and secure electrical systems
+            Revolutionize your energy consumption with our expert solar panel
+            installations in Lebanon. From residential rooftops to commercial
+            projects, we harness the power of the sun for sustainable,
+            cost-effective electricity solutions. Our team ensures seamless
+            integration, maximum efficiency, and long-term savings for every
+            client.
           </p>
           <div className="expertise-flex-1">
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Power Lines</p>
+              <p className="expertise-style-p-2">Solar Experts</p>
               <div className="orange-box"></div>
               <p className="expertise-style-p-3">01</p>
             </div>
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Circuit Masters</p>
+              <p className="expertise-style-p-2">Green Power</p>
               <div className="orange-box"></div>
               <p className="expertise-style-p-3">02</p>
             </div>
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Wiring Works</p>
+              <p className="expertise-style-p-2">Sun Solutions</p>
               <div className="orange-box"></div>
               <p className="expertise-style-p-3">03</p>
             </div>
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Spark Solutions</p>
+              <p className="expertise-style-p-2">Solar Innovation</p>
               <div className="orange-box"></div>
               <p className="expertise-style-p-3">04</p>
             </div>
           </div>
           <p className="expertise-style-p-4">
-            Experience excellence in plumbing solutions with our dedicated team.
-            From installations to repairs, we deliver reliable service, ensuring
-            efficient water systems for homes and businesses in Lebanon
+            Elevate your energy independence with our trusted solar solutions.
+            With a decade of expertise, we deliver top-tier installations for
+            lasting sustainability and savings in Lebanon.
           </p>
         </div>
         <h3></h3>
@@ -111,4 +111,4 @@ const Moreabout = () => {
   );
 };
 
-export default Moreabout;
+export default Moreabout3;

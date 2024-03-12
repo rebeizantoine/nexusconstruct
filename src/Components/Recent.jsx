@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
+import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import imagerecent from "../Images/image-recent.png";
@@ -9,20 +10,26 @@ import "../Styles/recent.css";
 
 const Recent = () => {
   // State to track the visibility of each popup
-  const [showPopups, setShowPopups] = useState([false, false, false]);
+  const [projects, setProjects] = useState([]);
+  const [showPopups, setShowPopups] = useState([]);
+  const navigate = useNavigate(); // Initialize useNavigate
 
-  // Function to toggle the visibility of a popup based on its index
-  const togglePopup = (index) => {
-    const updatedPopups = [...showPopups];
-    updatedPopups[index] = !updatedPopups[index];
-    setShowPopups(updatedPopups);
-  };
-  const imageTitles = ["CONCRETE WORK", "ROOFING WORKS", "SOLAR INSTALLATION"];
-  const imageTexts = [
-    "lorem ipsum chiki biki",
-    "lorem ipsum chiki biki",
-    "lorem ipsum chiki biki",
-  ];
+  useEffect(() => {
+    // Fetch the data when the component mounts
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://steelcitybackend.onrender.com/projects/"
+        );
+        const data = await response.json();
+        setProjects(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   // Custom arrow component
   const NextArrow = (props) => {
@@ -106,31 +113,48 @@ const Recent = () => {
     ],
   };
 
+  const getFirst10Words = (text) => {
+    const words = text.split(" ");
+    return words.slice(0, 10).join(" ");
+  };
+
+  const navigateToProject = (projectTitle) => {
+    navigate(`/projectviewshow/${projectTitle}`); // Navigate to the project title route
+  };
+
+  const togglePopup = (index) => {
+    const updatedPopups = [...showPopups];
+    updatedPopups[index] = !updatedPopups[index];
+    setShowPopups(updatedPopups);
+  };
+
   return (
-    <div className="recent-box-all">
+    <div className="recent-box-all" id="projects">
       <div className="black-box">
         <h2 className="recent-h2">RECENT WORK</h2>
         <div className="recent-h3">Building Strong Foundations For Success</div>
       </div>
       <Slider {...settings}>
-        {/* Map through an array to render 3 images */}
-        {[...Array(3).keys()].map((index) => (
-          <div key={index} className="single-box">
+        {projects.map((project, index) => (
+          <div key={project._id} className="single-box">
             <div
               className="single-image"
               onMouseEnter={() => togglePopup(index)}
               onMouseLeave={() => togglePopup(index)}
               style={{ position: "relative", display: "inline-block" }}
             >
-              <img src={imagerecent} alt="" />
-              {/* Show popup if corresponding index is true */}
+              <img
+                src={project.projectImage}
+                alt=""
+                onClick={() => navigateToProject(project.projectTitle)} // Corrected onClick here
+                style={{
+                  cursor: "pointer",
+                }}
+              />
               {showPopups[index] && (
                 <div className="popup">
-                  <h3>{imageTitles[index]}</h3>
-                  <p>{imageTexts[index]} </p>{" "}
-                  <p className="para-123">
-                    <img className="plus-sign123" src={Plussizse} alt="" />
-                  </p>
+                  <h3>{project.projectTitle}</h3>
+                  <p>{getFirst10Words(project.projectDescription)}</p>
                 </div>
               )}
             </div>

@@ -51,6 +51,8 @@
   margin-top: 10px;
   padding-top: 10px;
   margin-left: 200px;
+  text-align: center;
+  height: 110px;
 }
 .button-read-more-2 i {
   margin-left: 10px;
@@ -80,6 +82,7 @@
 .single-service img {
   width: 210px;
   height: 84px;
+  margin-top: 15px;
 }
 .single-service p {
   width: 300px;
@@ -93,17 +96,18 @@
   padding: 0;
   font-family: Rubik, sans-serif;
   margin-left: 30px;
-  margin-top: 12px;
+  margin-top: 0px;
 }
 .single-service h2 {
   font-family: Rajdhani, sans-serif;
   color: #171717;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 24px;
   padding: 0;
   margin-left: 40px;
   margin-right: 40px;
-  margin-top: 32px;
+  margin-top: 41px;
+  width: 162px;
 }
 .all-services {
   border-top: 1px solid #e3e3e3;

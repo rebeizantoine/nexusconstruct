@@ -3,7 +3,19 @@ import "../Styles/hero.css";
 import imageright from "../Images/image-1.png";
 import imageleft from "../Images/image-2.png";
 import doublearrows from "../Images/doublearrowleft.png";
+
 const Hero = () => {
+  // Function to handle scrolling to services section
+  const handleScrollToServices = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth", // Smooth scrolling animation
+        block: "start", // Scroll to the top of the section
+        inline: "nearest", // Scroll to the nearest edge of the section
+      });
+    }
+  };
   return (
     <div>
       <div className="all-boxes">
@@ -12,7 +24,11 @@ const Hero = () => {
             <p>SMART SOLUTIONS</p>
             <h2>Building the spaces where memories are made</h2>
             <div className="read-more-box">
-              <button className="button-read-more">
+              {/* Add onClick event to scroll to services */}
+              <button
+                className="button-read-more"
+                onClick={handleScrollToServices}
+              >
                 READ MORE <i>+</i>
               </button>
             </div>
@@ -31,9 +47,9 @@ const Hero = () => {
               Transforming Spaces Creating Memories
             </h3>
             <h5 className="h5-box-2-1">
-              It is a long established fact that a reader will be distracted by
-              the readablejk content of a page when looking at its layout. Lorem
-              Ipsum is simply dummyj
+              Nexus Construct is a Lebanese company founded in 2015. dedicated
+              to planning,designing and constructing, With a commitment to
+              excellence, and best prices.
             </h5>
             <div className="small-box-123">
               <div className="h5-title-1">
@@ -42,12 +58,13 @@ const Hero = () => {
                   <div className="doubarr">
                     <img className="double-arrows" src={doublearrows} alt="" />
                   </div>
-                  Roof Repair
+                  Designing your present
                 </h2>
               </div>
               <p className="p-box-2-2">
-                It is a long established fact that a reader will distracted by
-                the readablejk content of a page when looking at its layout.
+                Elevate your present with our innovative approach to interior
+                and architectural design solutions merging modern aesthetics
+                with timeless elegance.
               </p>
             </div>
             <div className="small-box-1234">
@@ -57,12 +74,13 @@ const Hero = () => {
                   <div className="doubarr">
                     <img className="double-arrows" src={doublearrows} alt="" />
                   </div>
-                  Roof Repair
+                  Constructing your future
                 </h2>
               </div>
               <p className="p-box-2-2">
-                It is a long established fact that a reader will distracted by
-                the readablejk content of a page when looking at its layout.
+                Build your dreams with us, where precision meets passion. From
+                concept to completion, we create enduring structures that shape
+                tomorrow's skyline with excellence and vision.
               </p>
             </div>
           </div>
