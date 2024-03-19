@@ -80,7 +80,10 @@ const Footer = () => {
               <div className="col3">
                 <div className="title222">NEWSLETTER</div>
                 <div className="footer-address">
-                  <p>Lorem Ipsum is simply is dumi omy is text Loremo Ipsum</p>
+                  <p>
+                    Just enter your E-mail and wait for the confirmation to join
+                    our newsletter
+                  </p>
                   <div className="input-container">
                     <input type="email" placeholder="Your E-mail Address..." />
                     <button className="invite-btn">
