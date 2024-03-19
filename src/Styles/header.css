@@ -17,10 +17,11 @@ a {
   width: 130px !important;
   margin-top: 1.5%;
   text-decoration: none;
+  color: #171717 !important;
 }
 .header-ul a:hover {
   cursor: pointer;
-  color: orangered;
+  color: orangered !important;
 }
 .header-all {
   display: flex;
@@ -28,6 +29,7 @@ a {
   height: 100px;
   background-color: #f3f3f3;
   font-family: Rubik, sans-serif;
+  color: #171717 !important;
 }
 .header-1 {
   margin-left: 150px;
@@ -36,6 +38,14 @@ a {
   width: 200px;
   margin-left: 12%;
   display: flex;
+  color: #171717 !important;
+}
+.weird-blue {
+  color: #171717 !important;
+}
+.weird-blue:hover {
+  color: orangered !important;
+  cursor: pointer;
 }
 .image-circle {
   width: 55px;

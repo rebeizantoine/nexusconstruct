@@ -89,12 +89,20 @@ const Header = ({ scrollToServices }) => {
                   <a href="">About Us</a>
                 </li>
                 <li>
-                  <a href="/#services" onClick={handleScrollToServices}>
+                  <a
+                    className="weird-blue"
+                    href="/#services"
+                    onClick={handleScrollToServices}
+                  >
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="/#projects" onClick={handleScrollToProjects}>
+                  <a
+                    className="weird-blue"
+                    href="/#projects"
+                    onClick={handleScrollToProjects}
+                  >
                     Projects
                   </a>
                 </li>
