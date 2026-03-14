@@ -1,301 +1,168 @@
-/* .data-background {
-  background-image: url("../Images/banner-bg-2.png");
+.more-about {
   width: 100%;
-  height: 200px;
-  background-color: #171717;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 70px;
-  padding: 195px 0;
-  overflow: hidden;
-  position: relative;
-}
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1140px;
-  margin-left: 105px;
-  margin-right: 105px;
-}
-.breadcrumb-content {
-  position: relative;
-  z-index: 9;
-  width: 1110px;
-  height: 52px;
-}
-.box-mau {
-  align-self: center !important;
-  width: 540px;
-  height: 52px;
-}
-.sas {
-  font-size: 42px;
-  --bs-text-opacity: 1;
-  color: rgba(255, 255, 255), 1 !important;
   font-family: Rajdhani, sans-serif;
 }
-.ded {
-  align-self: center !important;
-  width: 540px;
-  height: 32px;
-}
-.ded-ul {
-  width: 540px;
-  height: 32px;
-} */
 
-.sas {
-  font-size: 42px;
-  --bs-text-opacity: 1;
-  color: rgba(255, 255, 255), 1 !important;
-  font-family: Rajdhani, sans-serif;
-}
-.ded-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  font-size: 24px;
-  font-weight: 700;
-  font-family: Rajdhani, sans-serif;
-  position: absolute;
-  right: 10%;
-  top: 42%;
-  font-weight: 700;
-}
-.ded-ul a {
-  transition: all 0.3s ease;
-}
-.ded-ul a:hover {
-  color: #ff6600;
-}
+/* Breadcrumb */
 .data-background {
   background-image: url("../Images/banner-bg-2.png");
-  width: 100%;
-  height: 300px;
-  background-color: rgb(236, 227, 227);
+  background-color: rgba(23, 23, 23, 0.95);
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 70px;
-  overflow: hidden;
+  background-position: center;
+  padding: 80px 20px;
+  color: white;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
   position: relative;
-}
-.data-background::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(23, 23, 23, 0.95);
-}
-.more-about {
-  height: 100%;
 }
 .sas {
-  position: absolute;
-  top: 32%;
-  font-family: Rajdhani, sans-serif;
   font-size: 42px;
+  margin-bottom: 20px;
+}
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 18px;
+}
+.breadcrumb a {
+  color: orangered !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+.breadcrumb a:hover {
+  color: #ff6600;
 }
 .arrow-right {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 3px;
-}
-.elect-image-1 {
-  width: 700px;
-  height: 500px;
-  border-radius: 8px;
-}
-.request-service {
-  color: white;
-  font-weight: 700;
-  font-size: 18px;
-  padding: 14px 30px;
-  background-color: #ff6600;
-  border-radius: 5px;
-  font-family: Rajdhani, sans-serif;
-  margin-top: 19px;
-  transition: background-color 0.5s ease-in-out;
-  display: inline-block;
+  width: 15px;
+  height: 15px;
 }
 
-.request-service:hover {
-  background-color: #171717;
-  cursor: pointer;
-}
-.checklist123 {
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
-  color: #ff6600;
-  position: relative;
-  top: 7px;
-}
-.checklist {
-  display: flex;
-}
-.pvc-p {
-  color: #616670;
-  margin-bottom: 12px;
-  margin-top: 12px;
-  display: flex;
-  font-size: 18px;
-}
-.p-elect-1 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.875em;
-  color: #616670;
-  font-family: Rajdhani, sans-serif;
-  margin-top: -30px;
-}
-.p-elect-2 {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1.875em;
-  color: #616670;
-  font-family: Rajdhani, sans-serif;
-  width: 282px;
-  height: 120px;
-  margin-top: -20px;
-  margin-left: 10px;
-}
-
-.p-elect-3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.875em;
-  color: #616670;
-  font-family: Rajdhani, sans-serif;
-  margin-top: -40px;
-}
-.title-549 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.875em;
-  color: #171717;
-  font-family: Rajdhani, sans-serif;
-}
-
-.title-elect-1 {
-  font-size: 41px;
-  font-weight: 700;
-  line-height: 1.875em;
-  color: #171717;
-  font-family: Rajdhani, sans-serif;
-}
-
-.elect-text-1 {
-  background-color: #ffffff;
-  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
-  padding: 31px 54px 39px 44px;
-  margin-left: 40px;
-}
+/* Electrical Wiring Section */
 .elect-box-1 {
   display: flex;
-  margin-left: 180px;
-  margin-top: 100px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1140px;
+  margin: 60px auto;
+}
+.elect-image-1 {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+.elect-text-1 {
+  flex: 1;
+  background: #fff;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 30px;
+}
+.title-549 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.p-elect-1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.p-elect-2 {
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 .flexy-1 {
-  margin-top: -60px;
+  margin-top: 20px;
 }
 .checklist {
-  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
+.checklist123 {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.pvc-p {
+  font-size: 16px;
+}
+.request-service {
+  margin-top: 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.request-service:hover {
+  background-color: #171717;
+}
 
-.expertise-style-h3-1 {
-  font-family: Rajdhani, sans-serif;
-  color: #171717;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  font-size: 48px;
-  margin-left: -800px;
+/* Expertise Section */
+.expertise-style {
+  background-color: #f3f3f3;
+  padding: 60px 20px;
 }
-.expertise-style-p-1 {
-  font-size: 18px;
+.expertise-big-box {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.expertise-style-h3-1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.expertise-style-p-1,
+.expertise-style-p-4 {
+  font-size: 16px;
   color: #616670;
-  font-family: rubik, sans serif;
-  width: 740px;
-  height: 150px;
-  text-align: left;
+  margin-bottom: 30px;
+}
+.expertise-flex-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.expertise-style-flex-2 {
+  flex: 1 1 calc(25% - 20px);
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  min-width: 250px;
+}
+.expertise-style-flex-2 img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.orange-box {
+  width: 60px;
+  height: 100%;
+  background-color: rgba(255, 102, 0, 0.8);
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .expertise-style-p-2 {
-  font-size: 22px;
-  width: 118px;
-  height: 60px;
-  text-align: left;
-  margin-left: -20px;
-  font-family: Rajdhani, sans-serif;
   font-weight: 700;
 }
 .expertise-style-p-3 {
-  font-size: 32px;
-  right: 55px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
   color: white;
   font-weight: 700;
-  z-index: 9;
-  width: 33px;
   text-align: center;
-  margin-left: 20px;
-  font-family: Rajdhani, sans-serif;
-}
-.expertise-style-flex-2 {
-  display: flex;
-  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
-  background-color: var(--white);
-  border-radius: 8px;
-  position: relative;
-  padding: 20px 28px 20px 20px;
-  width: 30%;
-  height: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
-}
-.expertise-style-flex-2 img {
-  width: 60px;
-  height: 60px;
-  margin-top: 25px;
-  margin-right: 30px;
-}
-.orange-box {
-  width: 88px;
-  height: 155px;
-  background-color: rgba(255, 102, 0, 0.8);
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  z-index: -1;
-  text-align: center;
-  position: absolute;
-  left: 69%;
-  bottom: 1%;
-}
-
-.expertise-flex-1 {
-  display: flex;
-  max-width: 760px;
-  flex-wrap: wrap;
-}
-.expertise-big-box {
-  margin-top: -100px;
-  margin-left: 100px;
-}
-.expertise-style-p-4 {
-  font-size: 18px;
-  color: #616670;
-  font-family: rubik, sans serif;
-  width: 740px;
-  height: 150px;
-  text-align: left;
-  margin-top: -50px;
-}
-.image-second {
-  position: absolute;
-  top: 180%;
-  left: 55%;
-  width: 480px;
-  border-radius: 8px;
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import loadingGif from "../Images/icons8-loading.gif";
 import "../Styles/loading.css";
 
 const Loading = () => {

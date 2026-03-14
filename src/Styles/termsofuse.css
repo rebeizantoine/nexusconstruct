@@ -1,134 +1,57 @@
-.terms-and-privacy {
-  margin-top: 40px;
-  margin-left: 28%;
+/* Page container */
+.terms-page {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: Rajdhani, sans-serif;
+  color: #171717;
+  line-height: 1.7;
 }
 
-.terms-of-use-title {
-  width: 675px !important;
-  height: 80px;
-  border: 1px solid #e0e0e0;
-  background: #fff;
-  margin-bottom: 35px;
-}
-.terms-of-use-title h1 {
-  color: #000;
-  font-family: Manrope;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  width: 354px;
+/* Title */
+.terms-title {
+  font-size: 36px;
+  font-weight: 700;
   text-align: center;
-  margin-left: 22%;
-}
-.terms-of-use-second-box {
-  width: 675px !important;
-  height: 330px;
-  border: 1px solid #e0e0e0;
-  background: #fff;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
-.terms-of-use-second-box p {
-  color: #000;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.privacy-policy {
-  width: 675px !important;
-  height: 117px;
-  border: 1px solid #e0e0e0;
+/* Sections */
+.terms-section {
   background: #fff;
-  margin-bottom: 35px;
-}
-.privacy-policy p {
-  width: 614px;
-  height: 39px;
-  color: #000;
-  font-family: Manrope;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.privacy-policy h1 {
-  color: #000;
-  font-family: Manrope;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.cookies {
-  width: 675px !important;
-  height: 202px;
   border: 1px solid #e0e0e0;
-  background: #fff;
-  margin-bottom: 35px;
-}
-.cookies h1 {
-  color: #000;
-  font-family: Manrope;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.cookies p {
-  width: 614px;
-  height: 120px;
-  color: #000;
-  font-family: Manrope;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.privacy-statement {
-  width: 675px !important;
-  height: 117px;
-  border: 1px solid #e0e0e0;
-  background: #fff;
-  margin-bottom: 35px;
+  border-radius: 8px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
 }
 
-.privacy-statement h1 {
-  color: #000;
-  font-family: Manrope;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
+.terms-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ff6600; /* highlight headings */
 }
-.privacy-statement p {
-  color: #000;
-  font-family: Manrope;
-  font-size: 15px;
-  font-style: normal;
+
+.terms-section p {
+  font-size: 16px;
   font-weight: 400;
-  line-height: normal;
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  color: #616670;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .terms-page {
+    padding: 0 15px;
+  }
+
+  .terms-title {
+    font-size: 28px;
+  }
+
+  .terms-section {
+    padding: 20px;
+  }
 }

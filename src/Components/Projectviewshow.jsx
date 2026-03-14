@@ -4,30 +4,21 @@ import axios from "axios";
 import "../Styles/projectview.css";
 import "../Styles/moreabout.css";
 import rightarrow from "../Images/arrowright.png";
-import project1 from "../Images/project-1.png";
-import project2 from "../Images/project-2.png";
-import project3 from "../Images/project-3.png";
-import project4 from "../Images/project-4.png";
+
 import check from "../Images/check.png";
-import checkcorrect from "../Images/check.png";
 import star from "../Images/star.png";
-import Facebook from "../Images/facebook2.png";
-import Linkedin from "../Images/linkedin2.png";
-import twitter from "../Images/twitter.png";
-import pinterest from "../Images/pinterest.png";
-import email from "../Images/mail.png";
+
 import Doumit from "../Images/doumit-image.png";
 
 const Projectviewshow = () => {
   const { projectTitle } = useParams();
   const [project, setProject] = useState(null);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchProjectByTitle = async () => {
       try {
         const response = await axios.get(
-          `https://steelcitybackend.onrender.com/projects/title/${projectTitle}`
+          `https://steelcitybackend.onrender.com/projects/title/${projectTitle}`,
         );
         setProject(response.data);
       } catch (error) {

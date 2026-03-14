@@ -1,5 +1,4 @@
 import React from "react";
-import banner2 from "../Images/banner-bg-2.png";
 import imageconstruction from "../Images/solar-4.jpg";
 import rightarrow from "../Images/arrowright.png";
 import checkcorrect from "../Images/check.png";
@@ -35,7 +34,6 @@ const Moreabout3 = () => {
         <img className="elect-image-1" src={imageconstruction} alt="" />
         <div className="elect-text-1">
           <h1 className="title-549">Solar Panels</h1>
-          <h5></h5>
           <p className="p-elect-1">Planing, Real Estate</p>
           <p className="p-elect-2">
             In compliance with the stringent Lebanese Standards (Libnor)
@@ -103,7 +101,6 @@ const Moreabout3 = () => {
             lasting sustainability and savings in Lebanon.
           </p>
         </div>
-        <h3></h3>
         <p></p>
       </div>
       <img className="image-second" src={imageconstruction} alt="" />

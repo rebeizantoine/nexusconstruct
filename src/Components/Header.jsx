@@ -49,11 +49,11 @@ const Header = ({ scrollToServices }) => {
     }, 0);
   };
 
-  const handleServicesClick = () => {
-    if (scrollToServices) {
-      scrollToServices();
-    }
-  };
+  // const handleServicesClick = () => {
+  //   if (scrollToServices) {
+  //     scrollToServices();
+  //   }
+  // };
 
   return (
     <div>
@@ -86,7 +86,7 @@ const Header = ({ scrollToServices }) => {
                   <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="">About Us</a>
+                  <a href="/">About Us</a>
                 </li>
                 <li>
                   <a

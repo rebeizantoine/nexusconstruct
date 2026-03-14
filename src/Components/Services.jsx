@@ -14,7 +14,7 @@ const Services = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://steelcitybackend.onrender.com/services/"
+        "https://steelcitybackend.onrender.com/services/",
       );
       setServices(response.data);
     } catch (error) {
@@ -73,7 +73,7 @@ const Services = () => {
             <p>
               {truncateWords(
                 firstService?.serviceDescription || "Service Description",
-                14
+                14,
               )}
             </p>
             <div className="read-more-box-2">
@@ -90,7 +90,7 @@ const Services = () => {
             <p>
               {truncateWords(
                 secondService?.serviceDescription || "Service Description",
-                14
+                14,
               )}
             </p>
             <div className="read-more-box-2">
@@ -110,7 +110,7 @@ const Services = () => {
             <p>
               {truncateWords(
                 thirdService?.serviceDescription || "Service Description",
-                14
+                14,
               )}
             </p>
             <div className="read-more-box-2">

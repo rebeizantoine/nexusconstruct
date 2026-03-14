@@ -9,41 +9,46 @@ const Termsofuse = () => {
     const fetchTermsData = async () => {
       try {
         const response = await axios.get(
-          "https://steelcitybackend.onrender.com/terms/terms"
+          "https://steelcitybackend.onrender.com/terms/terms",
         );
         setTermsData(response.data);
       } catch (error) {
         console.error("Error fetching terms data:", error);
-        // Handle error, e.g., display an error message to the user
       }
     };
 
     fetchTermsData();
   }, []);
+
   return (
-    <div className="terms-and-privacy">
+    <div className="terms-page">
       {termsData.map((term) => (
-        <div key={term._id}>
-          <div className="terms-of-use-title">
-            <h1>Terms of Use & Privacy Policy</h1>
-          </div>
-          <div className="terms-of-use-second-box">
-            <p>{term.termsofuse1}</p>
-            <p>{term.termsofuse2}</p>
-            <p>{term.termsofuse3}</p>
-          </div>
-          <div className="privacy-policy">
-            <h1>Privacy Policy</h1>
+        <div key={term._id} className="terms-content">
+          <h1 className="terms-title">Terms of Use & Privacy Policy</h1>
+
+          <section className="terms-section">
+            <h2>Terms of Use</h2>
+            {[term.termsofuse1, term.termsofuse2, term.termsofuse3].map(
+              (paragraph, idx) => (
+                <p key={idx}>{paragraph}</p>
+              ),
+            )}
+          </section>
+
+          <section className="terms-section">
+            <h2>Privacy Policy</h2>
             <p>{term.privacypolicy}</p>
-          </div>
-          <div className="cookies">
-            <h1>Cookies</h1>
+          </section>
+
+          <section className="terms-section">
+            <h2>Cookies</h2>
             <p>{term.cookies}</p>
-          </div>
-          <div className="privacy-statement">
-            <h1>Changes to Privacy Statement</h1>
+          </section>
+
+          <section className="terms-section">
+            <h2>Changes to Privacy Statement</h2>
             <p>{term.changestostatement}</p>
-          </div>
+          </section>
         </div>
       ))}
     </div>

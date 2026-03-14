@@ -127,7 +127,7 @@
   color: #171717;
   font-weight: 400;
   font-size: 24px;
-  margin-left: -480px !important;
+  /* margin-left: -480px !important; */
   padding: 0;
 }
 .p-box-2-2 {

@@ -7,13 +7,8 @@ import project2 from "../Images/project-2.png";
 import project3 from "../Images/project-3.png";
 import project4 from "../Images/project-4.png";
 import check from "../Images/check.png";
-import checkcorrect from "../Images/check.png";
 import star from "../Images/star.png";
-import Facebook from "../Images/facebook2.png";
-import Linkedin from "../Images/linkedin2.png";
-import twitter from "../Images/twitter.png";
-import pinterest from "../Images/pinterest.png";
-import email from "../Images/mail.png";
+
 
 const Projectview = () => {
   return (
