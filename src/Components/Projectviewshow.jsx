@@ -18,7 +18,7 @@ const Projectviewshow = () => {
     const fetchProjectByTitle = async () => {
       try {
         const response = await axios.get(
-          `https://steelcitybackend.onrender.com/projects/title/${projectTitle}`,
+          `https://steelcitybackend.onrender.com/api/projects/title/${projectTitle}`,
         );
         setProject(response.data);
       } catch (error) {

@@ -19,7 +19,7 @@ const Recent = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://steelcitybackend.onrender.com/projects/",
+          "https://steelcitybackend.onrender.com/api/projects/",
         );
         const data = await response.json();
         setProjects(data);
