@@ -30,6 +30,7 @@ const Recent = () => {
 
     fetchData();
   }, []);
+  const projectRoutes = ["/Construction", "/Renovation", "/solar-panels"];
 
   // Custom arrow component
   const NextArrow = (props) => {
@@ -118,13 +119,15 @@ const Recent = () => {
     return words.slice(0, 10).join(" ");
   };
 
-  const navigateToProject = (projectTitle) => {
-    navigate(`/projectviewshow/${projectTitle}`); // Navigate to the project title route
+  const navigateToProject = (index) => {
+    navigate(projectRoutes[index]); // Navigate to the project title route
   };
 
   const togglePopup = (index) => {
     const updatedPopups = [...showPopups];
+
     updatedPopups[index] = !updatedPopups[index];
+
     setShowPopups(updatedPopups);
   };
 
@@ -144,16 +147,16 @@ const Recent = () => {
               style={{ position: "relative", display: "inline-block" }}
             >
               <img
-                src={project.projectImages[0]}
-                alt=""
-                onClick={() => navigateToProject(project.projectTitle)} // Corrected onClick here
+                src={project.projectImages?.[0] || imagerecent}
+                alt={project.projectTitle}
+                onClick={() => navigateToProject(index)}
                 style={{
                   cursor: "pointer",
                 }}
               />
               {showPopups[index] && (
                 <div className="popup">
-                  <h3>{project.projectTitle}</h3>
+                  <h3> {project.projectTitle}</h3>
                   {/* <p>{getFirst10Words(project.projectDescription)}</p> */}
                 </div>
               )}
