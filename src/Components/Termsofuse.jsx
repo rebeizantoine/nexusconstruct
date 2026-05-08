@@ -9,7 +9,7 @@ const Termsofuse = () => {
     const fetchTermsData = async () => {
       try {
         const response = await axios.get(
-          "https://steelcitybackend.onrender.com/terms/terms",
+          "https://steelcitybackend.onrender.com/api/terms/terms",
         );
         setTermsData(response.data);
       } catch (error) {

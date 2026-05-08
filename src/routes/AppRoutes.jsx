@@ -12,6 +12,7 @@ const SolarPanelsPage = lazy(() => import("../pages/SolarPanelsPage"));
 const ProjectViewPage = lazy(() => import("../pages/ProjectViewPage"));
 const SingleProjectPage = lazy(() => import("../pages/SingleProjectPage"));
 const TermsPage = lazy(() => import("../pages/TermsPage"));
+const RenovationPage = lazy(() => import("../pages/RenovationPage"));
 
 function AppRoutes() {
   return (
@@ -25,6 +26,8 @@ function AppRoutes() {
             <Route path="/construction" element={<ConstructionPage />} />
             <Route path="/solar-panels" element={<SolarPanelsPage />} />
             <Route path="/projectview" element={<ProjectViewPage />} />
+            <Route path="/renovation" element={<RenovationPage />} />
+
             <Route
               path="/projectviewshow/:projectTitle"
               element={<SingleProjectPage />}

@@ -14,8 +14,9 @@ const Services = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://steelcitybackend.onrender.com/services/",
+        "https://steelcitybackend.onrender.com/api/services/",
       );
+
       setServices(response.data);
     } catch (error) {
       console.error("Error fetching data: ", error);
@@ -41,13 +42,13 @@ const Services = () => {
   const navigate = useNavigate();
 
   const handleFirstClick = () => {
-    navigate("/Electrical");
+    navigate("/construction");
   };
   const handleSecondClick = () => {
-    navigate("/Construction");
+    navigate("/renovation");
   };
   const handleThirdClick = () => {
-    navigate("/Solarpanel");
+    navigate("/solar-panels");
   };
 
   return (

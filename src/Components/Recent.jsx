@@ -22,7 +22,7 @@ const Recent = () => {
           "https://steelcitybackend.onrender.com/api/projects/",
         );
         const data = await response.json();
-        setProjects(data);
+        setProjects(data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -144,7 +144,7 @@ const Recent = () => {
               style={{ position: "relative", display: "inline-block" }}
             >
               <img
-                src={project.projectImage}
+                src={project.projectImages[0]}
                 alt=""
                 onClick={() => navigateToProject(project.projectTitle)} // Corrected onClick here
                 style={{
@@ -154,7 +154,7 @@ const Recent = () => {
               {showPopups[index] && (
                 <div className="popup">
                   <h3>{project.projectTitle}</h3>
-                  <p>{getFirst10Words(project.projectDescription)}</p>
+                  {/* <p>{getFirst10Words(project.projectDescription)}</p> */}
                 </div>
               )}
             </div>

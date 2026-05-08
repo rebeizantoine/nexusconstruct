@@ -125,3 +125,11 @@
 .footer-bottom p:first-child {
   margin-right: 20px;
 }
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}

@@ -1,12 +1,14 @@
 import React from "react";
-import imageconstruction from "../Images/project-1.png";
-import imageconstruction2 from "../Images/constructionImage2.jpg";
+import imageconstruction from "../Images/solar-1.jpg";
+import imageconstruction2 from "../Images/solar-3.jpg";
+import imageconstruction3 from "../Images/solar-4.jpg";
+
 import rightarrow from "../Images/arrowright.png";
 import checkcorrect from "../Images/check.png";
 import "../Styles/moreabout.css";
 import svg1 from "../Images/expertise-item-1.svg";
 
-const Moreabout2 = () => {
+const MoreAbotuSolarPanel = () => {
   return (
     <div className="more-about">
       <div className="data-background">
@@ -14,9 +16,10 @@ const Moreabout2 = () => {
           <div className="breadcrumb-content">
             <div className="row">
               <div className="box-mau">
-                <h2 className="sas">Construction Solutions</h2>
+                <h2 className="sas">Solar Panel Solutions</h2>
               </div>
             </div>
+
             <div
               className="ded"
               style={{
@@ -68,13 +71,14 @@ const Moreabout2 = () => {
                     fontWeight: "600",
                   }}
                 >
-                  Construction Solutions
+                  Solar Panels
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
       <div className="elect-box-1">
         <div
           style={{
@@ -95,87 +99,119 @@ const Moreabout2 = () => {
               borderRadius: "12px",
             }}
           />
-        </div>{" "}
+        </div>
+
         <div className="elect-text-1">
-          <h1 className="title-549">Construction Solutions</h1>
-          <p className="p-elect-1">Planing, Real Estate</p>
+          <h1 className="title-549">Solar Energy Solutions</h1>
+
+          <p className="p-elect-1">Renewable Energy, Smart Systems</p>
+
           <p className="p-elect-2">
-            In compliance with the stringent Lebanese Standards (Libnor)
+            Delivering efficient solar solutions for homes and businesses across
+            Lebanon
           </p>
+
           <div className="flexy-1">
-            <h2 className="title-elect-1">Big Project</h2>
+            <h2 className="title-elect-1">Clean Energy</h2>
+
             <p className="p-elect-3">More of our services:</p>
+
             <div className="checklist">
               <img className="checklist123" src={checkcorrect} alt="" />
-              <p className="pvc-p">Building Renovations</p>
+
+              <p className="pvc-p">Rooftop Solar Installation</p>
             </div>
+
             <div className="checklist">
               <img className="checklist123" src={checkcorrect} alt="" />
-              <p className="pvc-p">Commercial Construction</p>
+
+              <p className="pvc-p">Battery Backup Systems</p>
             </div>
+
             <div className="checklist">
               <img className="checklist123" src={checkcorrect} alt="" />
-              <p className="pvc-p">Residential Construction </p>
+
+              <p className="pvc-p">Inverter Integration</p>
             </div>
+
             <button className="request-service">Request service</button>
           </div>
         </div>
       </div>
+
       <div className="expertise-style">
         <div className="expertise-big-box">
-          <h3 className="expertise-style-h3-1">Your Vision Our Expertise</h3>
+          <h3 className="expertise-style-h3-1">Sustainable Energy Expertise</h3>
+
           <p className="expertise-style-p-1 ">
-            {" "}
-            Utilizing Eurocode and ASCE standards, our construction solutions
-            ensure structural integrity and safety in every project. From
-            meticulous design to precise execution, we adhere to
-            industry-leading codes, optimizing efficiency and durability. Our
-            expert team combines innovation with best practices, delivering
-            results that exceed expectations for quality and reliability
+            Our solar panel systems are designed to provide reliable and
+            cost-effective energy solutions using modern renewable technologies.
+            From panel installation and electrical integration to battery
+            storage systems, we deliver optimized energy performance tailored
+            for Lebanon.
           </p>
+
           <div className="expertise-flex-1">
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Elite Solutions</p>
+
+              <p className="expertise-style-p-2">Energy Efficiency</p>
+
               <div className="orange-box"></div>
+
               <p className="expertise-style-p-3">01</p>
             </div>
+
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Trusted Craftsmen</p>
+
+              <p className="expertise-style-p-2">Certified Installation</p>
+
               <div className="orange-box"></div>
+
               <p className="expertise-style-p-3">02</p>
             </div>
+
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Innovation Hub</p>
+
+              <p className="expertise-style-p-2">Modern Technology</p>
+
               <div className="orange-box"></div>
+
               <p className="expertise-style-p-3">03</p>
             </div>
+
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Quality Assured</p>
+
+              <p className="expertise-style-p-2">Reliable Performance</p>
+
               <div className="orange-box"></div>
+
               <p className="expertise-style-p-3">04</p>
             </div>
           </div>
+
           <p className="expertise-style-p-4">
-            Established Excellence in Lebanon: With a decade of trusted service,
-            our innovative designs, reliable craftsmanship, and industry-leading
-            construction solutions redefine standards for quality and
-            reliability in the region.
+            Helping reduce dependency on generators through dependable solar
+            energy systems, high-quality installation standards, and long-term
+            renewable power solutions designed for Lebanon’s growing energy
+            demands and sustainability goals.
           </p>
         </div>
+
         <p></p>
       </div>
+
       <img
         className="image-second"
         style={{ width: "100%", height: "500px" }}
-        src={imageconstruction}
+        src={imageconstruction3}
         alt=""
       />
     </div>
   );
 };
 
-export default Moreabout2;
+export default MoreAbotuSolarPanel;

@@ -1,12 +1,14 @@
 import React from "react";
-import imageconstruction from "../Images/project-1.png";
-import imageconstruction2 from "../Images/constructionImage2.jpg";
+import renovation from "../Images/renovation-1.jpg";
+import renovation2 from "../Images/renovation-2.jpg";
+import renovation3 from "../Images/renovation-3.jpg";
+
 import rightarrow from "../Images/arrowright.png";
 import checkcorrect from "../Images/check.png";
 import "../Styles/moreabout.css";
 import svg1 from "../Images/expertise-item-1.svg";
 
-const Moreabout2 = () => {
+const MoreAboutRenovation = () => {
   return (
     <div className="more-about">
       <div className="data-background">
@@ -14,9 +16,10 @@ const Moreabout2 = () => {
           <div className="breadcrumb-content">
             <div className="row">
               <div className="box-mau">
-                <h2 className="sas">Construction Solutions</h2>
+                <h2 className="sas">Apartment Renovation</h2>
               </div>
             </div>
+
             <div
               className="ded"
               style={{
@@ -68,13 +71,14 @@ const Moreabout2 = () => {
                     fontWeight: "600",
                   }}
                 >
-                  Construction Solutions
+                  Renovation
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
       <div className="elect-box-1">
         <div
           style={{
@@ -83,11 +87,11 @@ const Moreabout2 = () => {
             gap: "20px",
           }}
         >
-          <img className="elect-image-1" src={imageconstruction} alt="" />
+          <img className="elect-image-1" src={renovation} alt="" />
 
           <img
             className="elect-image-1"
-            src={imageconstruction2}
+            src={renovation2}
             alt=""
             style={{
               height: "250px",
@@ -95,87 +99,121 @@ const Moreabout2 = () => {
               borderRadius: "12px",
             }}
           />
-        </div>{" "}
+        </div>
+
         <div className="elect-text-1">
-          <h1 className="title-549">Construction Solutions</h1>
-          <p className="p-elect-1">Planing, Real Estate</p>
+          <h1 className="title-549">Apartment Renovation</h1>
+
+          <p className="p-elect-1">Interior Design, Remodeling</p>
+
           <p className="p-elect-2">
-            In compliance with the stringent Lebanese Standards (Libnor)
+            Modern renovation solutions tailored for residential apartments and
+            spaces
           </p>
+
           <div className="flexy-1">
-            <h2 className="title-elect-1">Big Project</h2>
+            <h2 className="title-elect-1">Modern Living</h2>
+
             <p className="p-elect-3">More of our services:</p>
+
             <div className="checklist">
               <img className="checklist123" src={checkcorrect} alt="" />
-              <p className="pvc-p">Building Renovations</p>
+
+              <p className="pvc-p">Kitchen Renovation</p>
             </div>
+
             <div className="checklist">
               <img className="checklist123" src={checkcorrect} alt="" />
-              <p className="pvc-p">Commercial Construction</p>
+
+              <p className="pvc-p">Bathroom Remodeling</p>
             </div>
+
             <div className="checklist">
               <img className="checklist123" src={checkcorrect} alt="" />
-              <p className="pvc-p">Residential Construction </p>
+
+              <p className="pvc-p">Interior Finishing</p>
             </div>
+
             <button className="request-service">Request service</button>
           </div>
         </div>
       </div>
+
       <div className="expertise-style">
         <div className="expertise-big-box">
-          <h3 className="expertise-style-h3-1">Your Vision Our Expertise</h3>
+          <h3 className="expertise-style-h3-1">
+            Transforming Spaces With Precision
+          </h3>
+
           <p className="expertise-style-p-1 ">
-            {" "}
-            Utilizing Eurocode and ASCE standards, our construction solutions
-            ensure structural integrity and safety in every project. From
-            meticulous design to precise execution, we adhere to
-            industry-leading codes, optimizing efficiency and durability. Our
-            expert team combines innovation with best practices, delivering
-            results that exceed expectations for quality and reliability
+            Our apartment renovation services combine modern aesthetics with
+            practical functionality to create comfortable and stylish living
+            spaces. From structural upgrades and tiling to painting, lighting,
+            and finishing, we deliver high-quality renovations customized to
+            every client’s vision.
           </p>
+
           <div className="expertise-flex-1">
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Elite Solutions</p>
+
+              <p className="expertise-style-p-2">Modern Design</p>
+
               <div className="orange-box"></div>
+
               <p className="expertise-style-p-3">01</p>
             </div>
+
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Trusted Craftsmen</p>
+
+              <p className="expertise-style-p-2">Quality Materials</p>
+
               <div className="orange-box"></div>
+
               <p className="expertise-style-p-3">02</p>
             </div>
+
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Innovation Hub</p>
+
+              <p className="expertise-style-p-2">Skilled Craftsmanship</p>
+
               <div className="orange-box"></div>
+
               <p className="expertise-style-p-3">03</p>
             </div>
+
             <div className="expertise-style-flex-2">
               <img src={svg1} alt="" />
-              <p className="expertise-style-p-2">Quality Assured</p>
+
+              <p className="expertise-style-p-2">Elegant Finishing</p>
+
               <div className="orange-box"></div>
+
               <p className="expertise-style-p-3">04</p>
             </div>
           </div>
+
           <p className="expertise-style-p-4">
-            Established Excellence in Lebanon: With a decade of trusted service,
-            our innovative designs, reliable craftsmanship, and industry-leading
-            construction solutions redefine standards for quality and
-            reliability in the region.
+            Delivering apartment renovation services across Lebanon with
+            attention to detail, premium workmanship, and modern interior
+            solutions designed to enhance comfort, value, and everyday living
+            experiences for homeowners.
           </p>
         </div>
+
         <p></p>
       </div>
+
       <img
         className="image-second"
         style={{ width: "100%", height: "500px" }}
-        src={imageconstruction}
+        src={renovation3}
         alt=""
       />
     </div>
   );
 };
 
-export default Moreabout2;
+export default MoreAboutRenovation;

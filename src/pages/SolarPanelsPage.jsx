@@ -1,10 +1,10 @@
 import React from "react";
-import Moreabout3 from "../Components/Moreabout3";
+import Solarpanel from "../Components/MoreaboutSolarPanel";
 
 const SolarPanelsPage = () => {
   return (
     <div>
-      <Moreabout3 />
+      <Solarpanel />
     </div>
   );
 };
